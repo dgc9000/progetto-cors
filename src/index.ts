@@ -7,6 +7,10 @@ app.get('/welcome', (request, response) => {
     response.status(200).send('Benvenuto in quest\'app Express')
 })
 
+app.get('/welcome-json', (request, response) => {
+    response.status(200).json('Benvenuto in quest\'app Express')
+})
+
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`)
 })
